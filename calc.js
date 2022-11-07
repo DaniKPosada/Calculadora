@@ -39,10 +39,10 @@ function calcular(){
         case'-':
             calculo=anterior-actual;
             break;
-        case'x':
+        case'*':
             calculo=anterior*actual;
             break;
-        case'/':
+        case'÷':
             calculo=anterior/actual;
             break;
         default:
