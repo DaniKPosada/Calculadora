@@ -1,8 +1,8 @@
 const botonNumeros=document.getElementsByName('data-number');
 const botonOpera=document.getElementsByName('data-opera');
-const botonIgual=document.getElementsByName('data-igual');
-const botonBorrar=document.getElementsByName('data-borrar');
-const botonCancela=document.getElementsByName('cancelaTodo');
+const botonIgual=document.getElementsByName('data-igual')[0];
+const botonBorrar=document.getElementsByName('data-borrar')[0];
+const botonCancela=document.getElementsByName('cancelaTodo')[0];
 const botonVista=document.getElementsByName('vista');
 var resultado= document.getElementById('resultado');
 var opActual='';
@@ -22,20 +22,20 @@ botonIgual.addEventListener('click',function(){
     calcular();
     actualizarDisplay();
 });
-botonBorrar.addEventListener('click',function(){
+botonCancela.addEventListener('click',function(){
     clear();
     actualizarDisplay();
 });
 function agregarNumero(num){
     opActual=opActual.toString()+num.toString();
     actualizarDisplay();
-};
+}
 function clear(){
     opActual='';
     opAnt='';
     operacion=undefined;
-};
+}
 function actualizarDisplay(){
     resultado.value=opActual;
-};
+}
 clear();
