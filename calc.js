@@ -54,7 +54,7 @@ function calcular(){
     opAnt='';
 }
 botonBorrar.addEventListener('click',function(){
-    clear();
+    backspace();
     actualizarDisplay();
 });
 botonIgual.addEventListener('click',function(){
@@ -65,6 +65,12 @@ botonCancela.addEventListener('click',function(){
     clear();
     actualizarDisplay();
 });
+function backspace(){
+    var texto=opActual.toString();
+    var borrada=(texto.substring(0,texto.length-1));
+    opActual=borrada;
+    actualizarDisplay();
+}
 function agregarNumero(num){
     opActual=opActual.toString()+num.toString();
     actualizarDisplay();
