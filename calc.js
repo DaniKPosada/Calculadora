@@ -69,9 +69,9 @@ botonCancela.addEventListener('click',function(){
 botonVistaNoche.addEventListener('click',() =>{
     document.querySelector("body").style.background="black";
 });
-botonVistaDia.addEventListener('click',function(){
-    clear();
-    actualizarDisplay();
+botonVistaDia.addEventListener('click',() =>{
+    document.querySelector("body").style.background="linear-gradient(to right,red,yellow)";
+
 });
 function backspace(){
     var texto=opActual.toString();
