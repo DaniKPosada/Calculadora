@@ -66,11 +66,10 @@ botonCancela.addEventListener('click',function(){
     clear();
     actualizarDisplay();
 });
-botonVistaDia.addEventListener('click',function(){
-    clear();
-    actualizarDisplay();
+botonVistaNoche.addEventListener('click',() =>{
+    document.querySelector("body").style.background="black";
 });
-botonVistaNoche.addEventListener('click',function(){
+botonVistaDia.addEventListener('click',function(){
     clear();
     actualizarDisplay();
 });
