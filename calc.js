@@ -3,7 +3,8 @@ const botonOpera=document.getElementsByName('data-opera');
 const botonIgual=document.getElementsByName('data-igual')[0];
 const botonBorrar=document.getElementsByName('data-borrar')[0];
 const botonCancela=document.getElementsByName('cancelaTodo')[0];
-const botonVista=document.getElementsByName('vista');
+const botonVistaDia=document.getElementsByName('vista')[0];
+const botonVistaNoche=document.getElementsByName('vista')[1];
 var resultado= document.getElementById('resultado');
 var opActual='';
 var opAnt='';
@@ -62,6 +63,14 @@ botonIgual.addEventListener('click',function(){
     actualizarDisplay();
 });
 botonCancela.addEventListener('click',function(){
+    clear();
+    actualizarDisplay();
+});
+botonVistaDia.addEventListener('click',function(){
+    clear();
+    actualizarDisplay();
+});
+botonVistaNoche.addEventListener('click',function(){
     clear();
     actualizarDisplay();
 });
